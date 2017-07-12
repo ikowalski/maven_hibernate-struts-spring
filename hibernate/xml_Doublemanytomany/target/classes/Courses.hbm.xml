@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-12 23:29:12 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="xml_manytomany.Courses" table="COURSES">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="course_name" type="java.lang.String">
+            <column name="COURSE_NAME" />
+        </property>
+        <!-- 生成维护两者关系的第三个表 table是表名 -->
+         <set name="students" table="t_Courses_Students" inverse="true">  
+            <!--当前表（course）的主键-->  
+            <key column="Courses_id"></key>  
+            <many-to-many class="xml_manytomany.Students" column="Students_id"></many-to-many>  
+        </set>  
+    </class>
+</hibernate-mapping>

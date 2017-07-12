@@ -1,0 +1,1 @@
+基于maven项目控制，hibernate，struts，spring基础学习

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-12 18:40:37 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="xml_onetomany.Classes" table="CLASSES">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="classname" type="java.lang.String">
+            <column name="classname" />
+        </property>
+        <set name= "students" inverse="true">
+        <key column="class_id"></key>
+        <one-to-many class="xml_onetomany.Students"/>
+        </set>
+    </class>
+</hibernate-mapping>
