@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2017-7-12 18:40:37 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="xml_onetomany.Classes" table="CLASSES">
+    <class name="xml_manytoone.Classes" table="CLASSES">
         <id name="id" type="int">
             <column name="ID" />
             <generator class="native" />

@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 2017-7-12 23:29:12 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="xml_manytomany.Students" table="STUDENTS">
+    <class name="xml_Doublemanytomany.Students" table="STUDENTS">
         <id name="id" type="int">
             <column name="ID" />
             <generator class="native" />
@@ -14,7 +14,7 @@
         <set name="courses" table="t_Courses_Students" cascade="all" >  
             <!--当前表（course）的主键-->  
             <key column="Students_id"></key>  
-            <many-to-many class="xml_manytomany.Courses" column="Courses_id"></many-to-many>  
+            <many-to-many class="xml_Doublemanytomany.Courses" column="Courses_id"></many-to-many>  
         </set>  
     </class>
 </hibernate-mapping>

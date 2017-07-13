@@ -11,8 +11,8 @@
 <!--选择数据库方言-->        
 <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 <!--是否在console输出sql语句-->
-        <property name="show_sql">true</property>
-        <property name="format_sql">true</property>
+             <property name="show_sql">true</property>
+             <property name="format_sql">true</property> 
 <!--update用于更新数据库表，常见create：如果数据库存在该表先删除再重建-->
         <property name="hbm2ddl.auto">create</property>
         <mapping resource="Students.hbm.xml" />

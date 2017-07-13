@@ -1,4 +1,4 @@
-package xml_manytomany;
+package xml_Doublemanytomany;
 
 import java.util.HashSet;
 import java.util.Set;

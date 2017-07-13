@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    <property name="connection.username">root</property>
+        <property name="connection.password">040209</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hibernate_demo</property>
+<!--选择数据库方言-->        
+<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+<!--是否在console输出sql语句-->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+<!--update用于更新数据库表，常见create：如果数据库存在该表先删除再重建-->
+        <property name="hbm2ddl.auto">create</property>
+        <mapping class="annonation_onetomany.Students"/>
+        <mapping class="annonation_onetomany.Classes"/>
+    </session-factory>
+</hibernate-configuration>
+

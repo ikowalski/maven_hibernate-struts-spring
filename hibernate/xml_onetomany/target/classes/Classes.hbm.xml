@@ -12,7 +12,7 @@
             <column name="CLASSNAME" />
         </property>
         <set name= "students" cascade="all">
-        <key column="class_id"></key>
+        <key column="CLASS_ID"></key>
         <one-to-many class="xml_onetomany.Students"/>
         </set>
     </class>

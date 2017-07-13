@@ -11,8 +11,8 @@ import org.hibernate.service.ServiceRegistryBuilder;
 import org.junit.Before;
 import org.junit.Test;
 
-import xml_manytomany.Courses;
-import xml_manytomany.Students;
+import xml_Doublemanytomany.Courses;
+import xml_Doublemanytomany.Students;
 
 public class test_add {
 	    SessionFactory sessionFactory;
