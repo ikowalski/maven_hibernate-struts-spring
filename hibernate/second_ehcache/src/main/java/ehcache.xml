@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">       
+    <diskStore path="D:/ehcache" />   
+    <defaultCache  
+            maxElementsInMemory="3000"  
+            eternal="false"
+            timeToIdleSeconds="3600"  
+            timeToLiveSeconds="3600"  
+            overflowToDisk="true"  
+            />
+            <cache name="second_ehcache.Students"
+            maxElementsInMemory="3000"  
+            eternal="false"
+            timeToIdleSeconds="360"  
+            timeToLiveSeconds="360"  
+            overflowToDisk="true"  
+            />
+            </ehcache>
+<!--   1.maxElementsI
+nMemory：对象的最大储存个数
+       2.eternal：是否永久储存
+       3.overflowToDisk：超过最大储存数，是否储存在磁盘
+       4.memoryStoreEvictionPolicy内存中的对象置换策略
+ -->
+<!--
+　　　　1、timeToLiveSeconds的定义是：以创建时间为基准开始计算的超时时长；
+　　　　2、timeToIdleSeconds的定义是：在创建时间和最近访问时间中取出离现在最近的时间作为基准计算的超时时长；
+　　　　3、如果仅设置了timeToLiveSeconds，则该对象的超时时间=创建时间+timeToLiveSeconds，假设为A；
+　　　　4、如果没设置timeToLiveSeconds，则该对象的超时时间=max(创建时间，最近访问时间)+timeToIdleSeconds，假设为B；
+　　　　5、如果两者都设置了，则取出A、B最少的值，即min(A,B)，表示只要有一个超时成立即算超时。
+
+　　-->
