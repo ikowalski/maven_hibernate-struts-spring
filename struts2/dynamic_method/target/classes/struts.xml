@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+		"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+   <package name="/" extends="struts-default">
+        <action name="addAction" class="action.helloworld" method="add"> 
+            <result name="success">/add.jsp</result>
+        </action>
+		<!-- 该filter作用：如果url满足hello.action，则去执行action.hello.execute方法,注意默认的就是execute方法 -->
+        <action name="updateAction" class="action.helloworld" method="update">
+            <result name="success">/update.jsp</result>
+        </action>
+    </package>
+</struts>

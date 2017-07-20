@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:14:15:37 +0800] "GET /passParameter_DomainModel/login.jsp HTTP/1.1" 200 471 http-bio-8080-exec-1 634
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:14:15:41 +0800] "POST /passParameter_DomainModel/login.action HTTP/1.1" 200 280 http-bio-8080-exec-3 194
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:14:15:58 +0800] "POST /passParameter_DomainModel/login.action HTTP/1.1" 200 283 http-bio-8080-exec-4 95

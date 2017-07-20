@@ -1,0 +1,9 @@
+工程简单介绍：
+defaultAction：默认action的应用
+dynamic_*:动态调用的三种方式（method，感叹号，通配符）
+InputResult：内置Result属性INPUT的使用
+Interceptor：一个计时拦截器的应用
+modifyExtension：修改访问url的后缀名
+passParameter_*:传参的三种方法
+推荐查看顺序为：
+first——>dynamic_method——>dynamic_gantanhao——>dynamic_tongpeifu——>defaultAction——>modifyExtensioin——>passParameter_useActionProperty——>passParameter_DomainModel——>passParameter_ModelDriven——>InputResult——>Interceptor
